@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">   
+    <title>internal css</title>
+    <style>
+        .bluebox{
+            background-color: #91B4EE;
+            color: white;
+            height: 100px;
+            width:100px;
+            -webkit-animation: myanimation 3s;  
+        } 
+        @-webkit-keyframes myanimation {
+            from{background: green}
+            to{background: yellow}
+             }
+        .yellowbox{
+            background-color: rgb(255,213,0);
+            height: 100px;
+            width:auto;
+        }
+        .greenbox{
+            background-color:aquamarine;
+            height: 100px;
+            width:100px;
+            -webkit-animation: myanimation2 3s;
+        }
+        
+        @-webkit-keyframes myanimation2{
+            0% {   background: red;left;0px;top:0px  }
+       25% {background: yellow;left:200px;top:0px}
+           50%  {background: blue;left:200px;top:200px}
+    75%  { background: green;left;0px;top:200px }
+       100%  {background: red;left;0px;top:0px } }
+       /* Goroo, ono sa to ma pohybovat */
+        
+        .tasty{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+    
+    <body>
+<div class="bluebox">
+        <p>Blueberry</p>
+        </div>
+        <div class="yellowbox">
+    <p>Banana</p>
+        </div>
+        <div class="greenbox">
+        <p>Kiwi</p>
+        </div>
+    </body>
+    
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">   
+    <title>positioning</title>
+    <style>
+        .bluebox{
+            background-color: #91B4EE;
+            color: white;
+            height: 100px;
+            width:auto;
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+        } 
+        .yellowbox{
+            background-color: rgb(255,213,0);
+            height: 100px;
+            width:auto;
+          /*  position: relative;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+            */
+        }
+        .greenbox{
+            background-color:aquamarine;
+            height: 100px;
+            width:auto;
+            position: absolute;
+            top 40px;
+            left 40px;
+        }
+        .tasty{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+    
+    <body>
+          <!--if z-index is positive, they will show on top. if an element is not given a z-index it will inherit it from its parent. elements z-index by default is 0.-->
+<div class="bluebox">
+        <p>Blueberry is <span class="tasty">tasty</span></p>
+        </div>
+        <div class="yellowbox">
+    <p>Banana</p>
+        </div>
+        <div class="greenbox">
+        <p>Kiwi</p>
+        </div>
+    </body>
+    
+</html>
